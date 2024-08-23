@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import ErrorPage from "./ErrorPage.tsx";
 import "./index.css";
-import Test from "./pages/Text.tsx";
+import Start from "./pages/Start.tsx";
 import Posts from "./components/Posts.tsx";
 
 const router = createBrowserRouter([
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
         element: <Posts />,
       },
       {
-        path: "test",
-        element: <Test />,
+        path: "reacttailwind",
+        element: <Start />,
       },
     ],
   },

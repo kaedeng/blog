@@ -36,7 +36,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({
         transition: "color .25s ease",
       }}
     >
-      {InsideValue}
+      <h1 className="font-Montserrat">{InsideValue}</h1>
     </Element>
   );
 };
@@ -88,16 +88,16 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <div className="flex flex-col items-center justify-between space-y-16 pr-5 md:hidden">
+          <div className="flex flex-col items-center justify-between space-y-16 pr-5 md:hidden relative">
             <FaBars className="text-[#cdd6f4]" size={30} onClick={handleNav} />
             <div
               className={
                 !nav
-                  ? "fixed border border-t-0 border-[#eba0ac] bg-[#1e1e2e] rounded-b-xl"
+                  ? "absolute border border-t-0 border-[#eba0ac] bg-[#1e1e2e] rounded-b-xl"
                   : "fixed left-[-100%]"
               }
             >
-              <ul>
+              <ul className="top-0">
                 <li className="p-4">
                   <a
                     href="https://github.com/kaedeng"
